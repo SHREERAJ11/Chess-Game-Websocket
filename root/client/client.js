@@ -1,4 +1,5 @@
-const ws = new WebSocket("ws://localhost:8765");
+// Dynamically set WebSocket URL based on the environment
+const ws = new WebSocket(`ws://${window.location.host}`);
 
 ws.onmessage = (event) => {
     const message = JSON.parse(event.data);
@@ -24,7 +25,7 @@ function initializeBoard(board) {
             cellElement.classList.add("cell");
             if (cell) {
                 cellElement.innerText = cell;
-                cellElement.classList.add(cell[0]);
+                cellElement.classList.add(cell[0]); // Add a class based on the player (A or B)
             }
             cellElement.onclick = () => selectPiece(rowIndex, colIndex);
             boardElement.appendChild(cellElement);
@@ -40,7 +41,7 @@ function updateBoard(board) {
             cellElement.innerText = cell;
             cellElement.className = "cell";
             if (cell) {
-                cellElement.classList.add(cell[0]);
+                cellElement.classList.add(cell[0]); // Update class based on the player (A or B)
             }
         });
     });
