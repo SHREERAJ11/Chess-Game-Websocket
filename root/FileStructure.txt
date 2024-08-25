@@ -1,0 +1,14 @@
+project-root/
+│
+├── server/
+│   ├── game_logic.py
+│   ├── server.py
+│   ├── requirements.txt
+│   ├── Procfile
+│
+├── client/
+│   ├── index.html
+│   ├── styles.css
+│   ├── script.js
+│
+└── README.md
