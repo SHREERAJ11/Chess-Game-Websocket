@@ -6,14 +6,14 @@
       "use": "@vercel/python"
     },
     {
-      "src": "client/client.html",
+      "src": "client/client.json",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/",
-      "dest": "client/client.html"
+      "dest": "client/client.json"
     },
     {
       "src": "/api",
