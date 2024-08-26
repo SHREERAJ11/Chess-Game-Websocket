@@ -71,9 +71,10 @@ root/
 
 ## Deployment
 
-The project is deployed on Render. You can view and play the game live at:
+The project is deployed on Vercel. You can view and play the game live at:
 
-[Live Game URL](https://chess-game-websocket.onrender.com) 
+[Game URL](https://chess-game-websocket-fthy4lwge-shreeraj11s-projects.vercel.app)
+
 
 
 ### Deployment Steps
