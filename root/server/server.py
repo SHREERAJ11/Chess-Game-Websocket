@@ -57,7 +57,7 @@ async def handler(websocket, path):
 # Creating a new event loop and setting it as the current event loop
 async def main():
     # Use os.getenv to fetch the PORT environment variable; default to 8765 if not set
-    port = int(os.getenv("PORT", 8765))
+    port = int(os.environ.get("PORT", 8765)) 
     start_server = websockets.serve(handler, "0.0.0.0", port)
     await start_server
 
